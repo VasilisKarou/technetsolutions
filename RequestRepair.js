@@ -17,7 +17,8 @@ function RequestRepair() {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:5000/api/request', {
+      const response = await fetch('https://technetsolutions.onrender.com/api/request'
+, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
@@ -108,3 +109,4 @@ function RequestRepair() {
 }
 
 export default RequestRepair;
+
